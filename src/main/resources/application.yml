@@ -1,0 +1,23 @@
+spring:
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: inserirseuemail@hotmail.com
+    password: inserirSuaSenha
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: false
+
+
+  rabbitmq:
+    addresses:
+
+queue:
+  fiap: fiap.1scjr.drone
+
