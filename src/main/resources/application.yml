@@ -1,8 +1,11 @@
+server:
+  port: 9080
+
 spring:
   mail:
     host: smtp.office365.com
     port: 587
-    username: inserirseuemail@hotmail.com
+    username: inserirSeuEmail@hotmail.com
     password: inserirSuaSenha
     properties:
       mail:
@@ -16,8 +19,15 @@ spring:
 
 
   rabbitmq:
-    addresses:
+    addresses: inserir a url da instância criada no RabbitMQ
 
 queue:
-  fiap: fiap.1scjr.drone
+  fiap:
+    userVhost: inserir Vhost
+    password: inserir senha
+    port: inserir número da porta
+    url: inserir a url da instância criada no RabbitMQ
+    nome: fiap.1scjr.drone
+
+
 
